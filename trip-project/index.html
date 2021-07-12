@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/trip.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- ****************** Google fonts ****************** -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="first-nav">
+            <ul class="left-menu">
+                <a class="logo" href="index.html"></a>
+                <ul class="left-menu-list">
+                    <li><a href="./about.html">Who We Are?</a></li>
+                    <li><a href="./categories.html">Categories</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </ul>
+            <div class="right-menu">
+                <ul class="right-menu-list">
+                    <li><a href=""><img src="./svg/accountCircle.svg" class="user-circle" alt=""><span class="register-span">Login/Register</span></a></li>
+                    <li class="emails-li">
+                        <a href="">
+                            <img src="./img/envelope.png" class="envelope" alt="">
+                            <div class="emails-container">
+                                <span>tripjordan@gmail.com</span>
+                                <span>info@tripjordan.com</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="phone-nums-li">
+                        <a href="">
+                            <img src="./img/phoneCall.png" class="phone-call" alt="">
+                            <div class="phone-nums-container">
+                                <span>+45 72 398455 53</span>
+                                <span>+45 3672 812 3452</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="second-nav-container">
+            <nav class="second-nav">
+                <ul class="left-menu">
+                    <li class="destination-dropdown">
+                        Your Destination<i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-menu">
+                            <li class="jordan dropdown-item active-dropdown-item">JORDAN</li>
+                            <div class="dropdown-flex">
+                                <div class="simple-card">
+                                    <img src="./img/mosque.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="./criteria.html">AMMAN</a></h3>
+                                    </div>
+                                </div>  
+                                <div class="simple-card">
+                                    <img src="./img/aqaba.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">AQABA</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/petra.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">PETRA</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/irbid.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">IRBID</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/ajlon.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">AJLON</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/jarash.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">JARASH</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/jordan.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">JORDAN</a></h3>
+                                    </div>
+                                </div>
+                                <div class="btn-container">
+                                    <button class="view-more-btn">VIEW MORE <img class="btn-arrow" src="./svg/arrow.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <li class="dropdown-item dubai">DUBAI</li>
+                            <div class="dropdown-flex dropdown-flex-dubai">
+                                Dubai ipsum adipisicing elit. Consequatur, minima.
+                            </div>
+                            <li class="dropdown-item egypt">EGYPT</li>
+                            <div class="dropdown-flex dropdown-flex-egypt">
+                                Egypt ipsum adipisicing elit. Consequatur, minima.
+                            </div>
+                            <li class="dropdown-item lebanon">LEBANON</li>
+                            <div class="dropdown-flex dropdown-flex-lebanon">
+                                Lebanon ipsum adipisicing elit. Consequatur, minima.
+                            </div>
+                            <li class="dropdown-item qatar">QATAR</li>
+                            <div class="dropdown-flex dropdown-flex-qatar">
+                                Qatar ipsum adipisicing elit. Consequatur, minima.
+                            </div>
+                        </ul>
+                        
+                    </li>
+                    <li class="activity-dropdown">
+                        Your Activity <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item travel-on-foot active-dropdown-item">Travel On Foot</li>
+                            <div class="dropdown-flex">
+                                <div class="simple-card">
+                                    <img src="./img/discovery.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">Discovery</a></h3>
+                                    </div>
+                                </div>  
+                                <div class="simple-card">
+                                    <img src="./img/hiking.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">Hiking</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/trail.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">Trekking</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/trail.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">Trail</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/hiking.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">Vertigo Hike</a></h3>
+                                    </div>
+                                </div>
+                                <div class="btn-container">
+                                    <button class="view-more-btn">VIEW MORE <img class="btn-arrow" src="./svg/arrow.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <li class="dropdown-item hight-mountain">Hight Mountain</li>
+                            <div class="dropdown-flex">
+                                Hight mountain !!!!!
+                            </div>
+                            <li class="dropdown-item snow">Snow</li>
+                            <div class="dropdown-flex">
+                                Snow !!!!!
+                            </div>
+                            <li class="dropdown-item safari">Safari</li>
+                            <div class="dropdown-flex">
+                                Safari !!!!!
+                            </div>
+                            <li class="dropdown-item bike">Bike</li>
+                            <div class="dropdown-flex">
+                                Bike !!!!!
+                            </div>
+                        </ul>
+                        
+                    </li>
+                    <li class="traveling-dropdown">Your Way Of Traveling <i class="fas fa-caret-down"></i></li>
+                    <li><a href="">Advanced Search <i class="fas fa-bars"></i></a></li>
+                    
+                </ul>
+                <div class="search-form-container">
+                    <form class="right-form" action="">
+                        <div class="search-field-container">
+                            <input class="search-field" type="text" />
+                            <img class="search-svg" src="./svg/search.svg" alt="">
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <header class="phone-size-header">
+        <h2>download <strong><em>TRIP</em></strong> app for mobile !!</h2>
+        <ul>
+            <li>
+                <img src="./svg/playstore.svg" alt="">
+                <a href="">Download for ios</a>
+            </li>
+            <li>
+                <img src="./svg/appstore.svg" alt="">
+                <a href="">Download for android</a>
+            </li>
+        </ul>
+    </header>
+    <section class="explore-section">
+        <div>
+            <h1>Trip</h1>
+            <p>Phasellus nec pretium nunc. Suspendisse tincidunt 
+                eget dui eget aliquam. Vestibulum at sapien sodales,
+                tincidunt mi ac, laoreet velit. Duis
+            </p>
+            <button class="btn">Explore <img class="btn-arrow" src="./svg/arrow.svg" alt=""></button>
+        </div>
+    </section>
+    <section class="categories-section">
+        <p>THE BEST</p>
+        <h1>OUR MOST POPULAR CATEGORIES <a href="">SEE ALL</a></h1>
+        <div class="categories-flex">
+            <div class="up-down-cards">
+                <a card-img-link href="">
+                    <img src="./img/standingOnMountain.png" alt="" />
+                    <p>Honeymoon Tours</p>
+                    <h3 class="home-h3">Romantic escapes created for couples</h3>
+                </a>
+            </div>
+            <div class="up-down-cards">
+                <a card-img-link href="">
+                    <img src="./img/standingOnMountain.png" alt="" />
+                    <p>Off The Beaten Track</p>
+                    <h3 class="home-h3">Tours with a touch of adventure</h3>
+                </a>
+            </div>
+            <div class="up-down-cards">
+                <a card-img-link href="">
+                    <img src="./img/sitInFrontOfLake.png" alt="" />
+                    <p>Classic and highlight</p>
+                    <h3 class="home-h3">Tour for every traveler</h3>
+                </a>
+            </div>
+            <div class="up-down-cards">
+                <a card-img-link href="">
+                    <img src="./img/culture.png" alt="" />
+                    <p>Walking & Trekking</p>
+                    <h3 class="home-h3">For lovers of the great outdoors</h3>
+                </a>
+            </div>
+            <div class="up-down-cards">
+                <a card-img-link href="">
+                    <img src="./img/culture.png" alt="" />
+                    <p>Culture & Heritage</p>
+                    <h3 class="home-h3">Brush up on your local history</h3>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    <section class="image-box-section">
+        <div class="cover-div"></div>
+        <h1>500,000 travelers to date and a 97% satisfaction rate</h1>
+        <hr />
+        <p>Phasellus nec pretium nunc. Suspendisse tincidunt eget dui eget aliquam. Vestibulum at sapien
+          sodales, tincidunt mi ac, laoreet velit. Duis venenatis malesuada ex nec condimentum.
+        </p>
+        <button class="secondary-btn">DISCOVER TRIP <img class="btn-arrow" src="./svg/arrow.svg" alt=""></button>
+    </section>
+
+    <section class="type-destination-section">
+       <div class="center">
+            <div class="search-destination-box">
+                <p>Type your destination</p>
+                <form action="">
+                    <input type="text" placeholder="Your destination"/>
+                    <input type="text" placeholder="From"/>
+                    <input type="text" placeholder="To"/>
+                    <input type="text" placeholder="Price range"/>
+                    <button type="submit" class="btn">SEARCH</button>
+                </form>
+            </div>
+            <div class="horizontal-cards-container">
+                <div class="horizontal-card">
+                        <img src="./img/waterfall.png" alt="">
+                        <div class="card-info">
+                            <h3>Oman - Salalah in 7 days 
+                                <span>
+                                    <small>from</small>$1240
+                                    <br/>
+                                    <small>  From April to November.</small>
+                                </span>
+                            </h3>
+                            <p>Phasellus nec pretium nunc. Suspendisse tincidunt eget dui eget aliquam. Vestibulum at sapien sodales, tincidunt</p>
+                        </div>
+                </div>
+                <div class="horizontal-card">
+                    <img src="./img/womanInPetra.png" alt="">
+                    <div class="card-info">
+                        <h3>Discover Petra A Romantic Journey 
+                            <span>
+                                <small>from</small>$740
+                                <br/>
+                                <small>From April to November.</small>
+                            </span>
+                        </h3>
+                        <p>Phasellus nec pretium nunc. Suspendisse tincidunt eget dui eget aliquam. Vestibulum at sapien sodales, tincidunt</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="blog-horizontal-card">
+            <img src="./img/dubaiTower.png" alt="">
+            <div class="blog-card-info">
+                <p>Blog and Articles</p>
+                <h2>Top 5 adventure activities in Dubai</h2>
+                <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus 
+                    blandit.Pharetra vehicula erat. Etiam nec odio vestibulum est mattis efficitur vel ut 
+                    ma gna sit amet.
+                </p>
+                <button class="btn">FIND OUT MORE <img class="btn-arrow" src="./svg/arrow.svg" alt=""></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h1>TRIP</h1>
+            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit 
+                amet tellus blandit.Pharetra vehicula erat. Etiam nec odio vestibulum est 
+                mattis efficitur vel ut ma gna sit amet.
+            </p>
+        </div>
+        <div>
+            <h4>About Trip</h4>
+            <p><a href="">Terms & Conditions</a></p>
+            <p><a href="">Privacy Policy</a></p>
+            <p><a href="">Site Map</a></p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p><a href="">FAQs</a></p>
+            <p><a href="">Careers</a></p>
+        </div>
+        <div>
+            <p>NEWSLETTER HERE</p>
+            <h1>Stay updated</h1>
+            <form action="">
+                <input type="text" placeholder="Your E-mail"/>
+                <button class="btn">SUBSCRIBE <img class="btn-arrow" src="./svg/arrow.svg" alt=""></button>
+            </form>
+            <p>*Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.</p>
+        </div>
+        
+    </footer>
+    <div class="copyright-footer">
+        <p>2020 All Rights Reserved</p>
+    </div>
+</body>
+</html>

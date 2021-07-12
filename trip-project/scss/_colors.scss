@@ -1,0 +1,16 @@
+$primaryColor: #6F53C9;
+$btnPrimaryBg: #9364AD;
+$secondaryColor: #181818;
+$ternaryColor: #E3896D;
+$quadrantColor: #007EFF;
+@function primary-gradient($to) {
+    @return linear-gradient(unquote($to), darken($primaryColor, 5%), $ternaryColor);
+}
+$cardDescriptionBg: #F1F6F9;
+$cardDescriptionColor: #3B3B3B;  
+$lightBg: #EEE;
+$lightTextColor: #e3e3e3;
+$darkTextColor: #464646;
+$boxShadow: #00000040; 
+$pColor: #838383;
+$hColor: #2E2E2E;

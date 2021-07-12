@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/trip.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- ****************** Google fonts ****************** -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="first-nav">
+            <ul class="left-menu">
+                <a class="logo" href="index.html"></a>
+                <ul class="left-menu-list">
+                    <li><a href="./about.html">Who We Are?</a></li>
+                    <li><a href="./categories.html">Categories</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </ul>
+            <div class="right-menu">
+                <ul class="right-menu-list">
+                    <li><a href=""><img src="./svg/accountCircle.svg" class="user-circle" alt=""><span class="register-span">Login/Register</span></a></li>
+                    <li class="emails-li">
+                        <a href="">
+                            <img src="./img/envelope.png" class="envelope" alt="">
+                            <div class="emails-container">
+                                <span>tripjordan@gmail.com</span>
+                                <span>info@tripjordan.com</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="phone-nums-li">
+                        <a href="">
+                            <img src="./img/phoneCall.png" class="phone-call" alt="">
+                            <div class="phone-nums-container">
+                                <span>+45 72 398455 53</span>
+                                <span>+45 3672 812 3452</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="second-nav-container dark-bg">
+            <nav class="second-nav">
+                <ul class="left-menu">
+                    <li class="destination-dropdown">
+                        Your Destination<i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-menu">
+                            <li class="jordan dropdown-item active-dropdown-item">JORDAN</li>
+                            <div class="dropdown-flex">
+                                <div class="simple-card">
+                                    <img src="./img/mosque.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="./criteria.html">AMMAN</a></h3>
+                                    </div>
+                                </div>  
+                                <div class="simple-card">
+                                    <img src="./img/aqaba.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">AQABA</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/petra.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">PETRA</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/irbid.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">IRBID</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/ajlon.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">AJLON</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/jarash.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">JARASH</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/jordan.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">JORDAN</a></h3>
+                                    </div>
+                                </div>
+                                <div class="btn-container">
+                                    <button class="view-more-btn">VIEW MORE <img class="btn-arrow" src="./svg/arrow.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <li class="dropdown-item dubai">DUBAI</li>
+                            <div class="dropdown-flex dropdown-flex-dubai">
+                                Dubai ipsum adipisicing elit. Consequatur, minima.
+                            </div>
+                            <li class="dropdown-item egypt">EGYPT</li>
+                            <div class="dropdown-flex dropdown-flex-egypt">
+                                Egypt ipsum adipisicing elit. Consequatur, minima.
+                            </div>
+                            <li class="dropdown-item lebanon">LEBANON</li>
+                            <div class="dropdown-flex dropdown-flex-lebanon">
+                                Lebanon ipsum adipisicing elit. Consequatur, minima.
+                            </div>
+                            <li class="dropdown-item qatar">QATAR</li>
+                            <div class="dropdown-flex dropdown-flex-qatar">
+                                Qatar ipsum adipisicing elit. Consequatur, minima.
+                            </div>
+                        </ul>
+                        
+                    </li>
+                    <li class="activity-dropdown">
+                        Your Activity <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item travel-on-foot active-dropdown-item">Travel On Foot</li>
+                            <div class="dropdown-flex">
+                                <div class="simple-card">
+                                    <img src="./img/discovery.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">Discovery</a></h3>
+                                    </div>
+                                </div>  
+                                <div class="simple-card">
+                                    <img src="./img/hiking.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">Hiking</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/trail.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">Trekking</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/trail.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">Trail</a></h3>
+                                    </div>
+                                </div>
+                                <div class="simple-card">
+                                    <img src="./img/hiking.png" alt="" width="300">
+                                    <div class="card-footer">
+                                        <h3><a href="">Vertigo Hike</a></h3>
+                                    </div>
+                                </div>
+                                <div class="btn-container">
+                                    <button class="view-more-btn">VIEW MORE <img class="btn-arrow" src="./svg/arrow.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <li class="dropdown-item hight-mountain">Hight Mountain</li>
+                            <div class="dropdown-flex">
+                                Hight mountain !!!!!
+                            </div>
+                            <li class="dropdown-item snow">Snow</li>
+                            <div class="dropdown-flex">
+                                Snow !!!!!
+                            </div>
+                            <li class="dropdown-item safari">Safari</li>
+                            <div class="dropdown-flex">
+                                Safari !!!!!
+                            </div>
+                            <li class="dropdown-item bike">Bike</li>
+                            <div class="dropdown-flex">
+                                Bike !!!!!
+                            </div>
+                        </ul>
+                        
+                    </li>
+                    <li class="traveling-dropdown">Your Way Of Traveling <i class="fas fa-caret-down"></i></li>
+                    <li><a href="">Advanced Search <i class="fas fa-bars"></i></a></li>
+                    
+                </ul>
+                <div class="search-form-container">
+                    <form class="right-form" action="">
+                        <div class="search-field-container">
+                            <input class="search-field" type="text" />
+                            <img class="search-svg" src="./svg/search.svg" alt="">
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <header class="phone-size-header">
+        <h2>download <strong><em>TRIP</em></strong> app for mobile !!</h2>
+        <ul>
+            <li>
+                <img src="./svg/playstore.svg" alt="">
+                <a href="">Download for ios</a>
+            </li>
+            <li>
+                <img src="./svg/appstore.svg" alt="">
+                <a href="">Download for android</a>
+            </li>
+        </ul>
+    </header>
+    <section class="image-box-section-2">
+        <div class="cover-div">
+            <div class="rotated-div"></div>
+        </div>
+        <h1>Pick a Destination</h1>
+        <h2>With our trip finder!</h2>
+    </section>
+    <div class="pick-destination-section">
+        <div class="white-boxes">
+            <div class="row-1">
+                <div class="months">
+                    <p>I want to set off in...</p>   
+                    <div class="white-box">
+                        <ul>
+                            <li>Jan</li>
+                            <li>Feb</li>
+                            <li>Mar</li>
+                            <li class="active-month">Apr</li>
+                            <li>May</li>
+                            <li>Jun</li>
+                        </ul>
+                        <ul>
+                            <li>Jul</li>
+                            <li>Aug</li>
+                            <li>Sep</li>
+                            <li>Oct</li>
+                            <li>Nov</li>
+                            <li>Dec</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="include">
+                    <p>I want my trip to include...</p>
+                    <div class="white-box">
+                        <div class="icon-container">
+                            <i class="fas fa-biking"></i>
+                            <p>Relaxation</p>
+                        </div>
+                        <div class="icon-container">
+                            <i class="fas fa-biking"></i>
+                            <p>Sport/<br/>Activities</p>
+                        </div>
+                        <div class="icon-container">
+                            <i class="fas fa-biking"></i>
+                            <p>Historical<br/>sites</p>
+                        </div>
+                        <div class="icon-container">
+                            <i class="fas fa-biking"></i>
+                            <p>Local culture</p>
+                        </div>
+                        <div class="icon-container">
+                            <i class="fas fa-biking"></i>
+                            <p>Local cuisine</p>
+                        </div>
+                        <div class="icon-container">
+                            <i class="fas fa-biking"></i>
+                            <p>Egypt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-2">
+                <p>I am most interested in...</p>
+                <div class="white-box">
+                    <div class="flag-container">
+                        <img src="./img/jordanFlag.png" alt="">
+                        <p>Jordan</p>
+                    </div>
+                    <div class="flag-container">
+                        <img src="./img/omanFlag.png" alt="">
+                        <p>Oman</p>
+                    </div>
+                    <div class="flag-container">
+                        <img src="./img/emiratesFlag.png" alt="">
+                        <p>Emirates</p>
+                    </div>
+                    <div class="flag-container">
+                        <img src="./img/lebanonFlag.png" alt="">
+                        <p>Lebanon</p>
+                    </div>
+                    <div class="flag-container">
+                        <img src="./img/qatarFlag.png" alt="">
+                        <p>Qatar</p>
+                    </div>
+                    <div class="flag-container">
+                        <img src="./img/JordanFlag.png" alt="">
+                        <p>Egypt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dropdown-flex">
+            <div class="simple-card">
+                <img src="./img/petra.png" alt="" width="300">
+                <div class="card-footer">
+                    <h3><a href="">JORDAN</a></h3>
+                </div>
+            </div>  
+            <div class="simple-card">
+                <img src="./img/aqaba.png" alt="" width="300">
+                <div class="card-footer">
+                    <h3><a href="">OMAN</a></h3>
+                </div>
+            </div>
+            <div class="simple-card">
+                <img src="./img/aqaba.png" alt="" width="300">
+                <div class="card-footer">
+                    <h3><a href="">EGYPT</a></h3>
+                </div>
+            </div>
+            <div class="simple-card">
+                <img src="./img/aqaba.png" alt="" width="300">
+                <div class="card-footer">
+                    <h3><a href="">DUBAI</a></h3>
+                </div>
+            </div>
+            <div class="simple-card">
+                <img src="./img/aqaba.png" alt="" width="300">
+                <div class="card-footer">
+                    <h3><a href="">LEBANON</a></h3>
+                </div>
+            </div>
+            <div class="simple-card">
+                <img src="./img/jordan.png" alt="" width="300">
+                <div class="card-footer">
+                    <h3><a href="">JORDAN</a></h3>
+                </div>
+            </div>
+            <div class="simple-card">
+                <img src="./img/ajlon.png" alt="" width="300">
+                <div class="card-footer">
+                    <h3><a href="">OMAN</a></h3>
+                </div>
+            </div>
+            <div class="simple-card">
+                <img src="./img/ajlon.png" alt="" width="300">
+                <div class="card-footer">
+                    <h3><a href="">EGYPT</a></h3>
+                </div>
+            </div>
+            <div class="simple-card">
+                <img src="./img/ajlon.png" alt="" width="300">
+                <div class="card-footer">
+                    <h3><a href="">DUBAI</a></h3>
+                </div>
+            </div>
+            <div class="simple-card">
+                <img src="./img/ajlon.png" alt="" width="300">
+                <div class="card-footer">
+                    <h3><a href="">LEBANON</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="categories-section">
+        <p>THE BEST</p>
+        <h1>OUR MOST POPULAR CATEGORIES <a href="">SEE ALL</a></h1>
+        <div class="categories-flex">
+            <div class="up-down-cards active-card">
+                <a card-img-link href="">
+                    <img src="./img/standingOnMountain.png" alt="romantic escapes" />
+                    <h3>Honeymoon Tours</h3>
+                </a>
+            </div>
+            <div class="up-down-cards">
+                <a card-img-link href="">
+                    <img src="./img/standingOnMountain.png" alt="romantic escapes" />
+                    <h3>Off The Beaten Track</h3>
+                </a>
+            </div>
+            <div class="up-down-cards">
+                <a card-img-link href="">
+                    <img src="./img/sitInFrontOfLake.png" alt="romantic escapes" />
+                    <h3>Classic and highlight</h3>
+                </a>
+            </div>
+            <div class="up-down-cards">
+                <a card-img-link href="">
+                    <img src="./img/sitInFrontOfLake.png" alt="romantic escapes" />
+                    <h3>Walking & Trekking</h3>
+                </a>
+            </div>
+            <div class="up-down-cards">
+                <a card-img-link href="">
+                    <img src="./img/culture.png" alt="romantic escapes" />
+                    <h3>Culture & Heritage</h3>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="image-box-section-3">
+        <div class="cover-div"></div>
+        <h1>At Trip we believe that travel <br/>is better when it brings people together.</h1>
+        <hr/>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+            ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+            justo duo dolores et ea rebum. 
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+    </section>
+    <div class="dialogue-container">
+        <h1>At Trip we believe that travel <br/>is better when it brings people together.</h1>
+        <hr />
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
+            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit 
+            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum 
+            dolor sit amet. lorem
+        </p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+            ipsum dolor sit amet. Lorem.
+        </p>
+    </div>
+
+    <div class="above-footer secondary-bg">
+
+    </div>
+
+    <footer>
+        <div>
+            <h1>TRIP</h1>
+            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit 
+                amet tellus blandit.Pharetra vehicula erat. Etiam nec odio vestibulum est 
+                mattis efficitur vel ut ma gna sit amet.
+            </p>
+        </div>
+        <div>
+            <h4>About Trip</h4>
+            <p><a href="">Terms & Conditions</a></p>
+            <p><a href="">Privacy Policy</a></p>
+            <p><a href="">Site Map</a></p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p><a href="">FAQs</a></p>
+            <p><a href="">Careers</a></p>
+        </div>
+        <div>
+            <p>NEWSLETTER HERE</p>
+            <h1>Stay updated</h1>
+            <form action="">
+                <input type="text" placeholder="Your E-mail"/>
+                <button class="btn">SUBSCRIBE <img class="btn-arrow" src="./svg/arrow.svg" alt=""></button>
+            </form>
+            <p>*Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.</p>
+        </div>
+        
+    </footer>
+    <div class="copyright-footer">
+        <p>2020 All Rights Reserved</p>
+    </div>
+</body>
+</html>
